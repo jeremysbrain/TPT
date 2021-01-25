@@ -1,4 +1,5 @@
 function Repair-Sort {
+
     <#
     .SYNOPSIS
         Sorts objects when numbers are stored in strings without leading zeros
@@ -6,7 +7,7 @@ function Repair-Sort {
         PS C:\> @('File1.txt', 'File2.txt', 'File10.txt', 'File5.txt') | Repair-Sort
         Output of standard Sort-Object would be File1.txt, File10.txt, File2.txt, File5.txt
         Repaired sort output is File1.txt, File2.txt, File5.txt, File10.txt
-
+    .EXAMPLE
         PS C:\> Repair-Sort @('File1.txt', 'File2.txt', 'File10.txt', 'File5.txt')
         Output of standard Sort-Object would be File1.txt, File10.txt, File2.txt, File5.txt
         Repaired sort output is File1.txt, File2.txt, File5.txt, File10.txt
